@@ -6,7 +6,7 @@ function About() {
         <img src='favicon.ico' alt='Profile' className='Profile-pic'/>
         <div>
           <h2 className='Title-item'>Vitor Paladini</h2>
-          <p className='Text-item'>Olá! Me chamo Vitor, sou estudante de Ciência da Computação e apaixonado pelo conhecimento. Viso aprimorar o meu trabalho e ampliar meu saber. Meus objetivos incluem buscar novas experiências e oportunidades de executar na prática os conhecimentos adquiridos pelos estudos.</p>
+          <p className='Text-item'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut diam cursus, suscipit nisl et, hendrerit nisi. Suspendisse auctor eros in placerat sodales. Suspendisse ut rutrum tellus, at faucibus augue. Sed eros ligula, ultrices a porttitor ac, aliquet porttitor erat. Nulla nulla velit, aliquet non rhoncus consequat, finibus in nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed porttitor nulla sed molestie interdum. Nulla porttitor nibh leo, vitae blandit ex ullamcorper in. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </section>
     )
