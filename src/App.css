@@ -36,6 +36,12 @@ body {
   color: white;
 }
 
+header, nav {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
 ul {
   padding: 0;
 }
@@ -222,23 +228,51 @@ h3 {
 }
 
 .line {
-    display: flex;
-    align-items: center;
-    margin-right: 100px;
-
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
   height: calc(100vh - 350px);
   justify-content: center;
 }
 
 .profile-image {
-  width: 331.09px; /* Define a largura da imagem */
-  height: 446px; /* Define a altura da imagem */
-  border-radius: 0; /* Arredonda as bordas para criar um círculo */
-  box-shadow: 0 0 5px #9D00FF, 0 0 15px #9D00FF; /* Define a sombra inicial */
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Make the image responsive */
+  border-radius: 0;
+  box-shadow: 0 0 5px #9D00FF, 0 0 15px #9D00FF;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile-image:hover {
-  transform: scale(1.05); /* Aumenta o tamanho da imagem ao passar o mouse */
-  box-shadow: 0 0 10px #7A00CC, 0 0 25px #7A00CC, 0 0 40px #7A00CC; /* Define a sombra ao passar o mouse */
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #7A00CC, 0 0 25px #7A00CC, 0 0 40px #7A00CC;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .Nav-list {
+    padding: 50px 20px;
+  }
+  
+  .Text-item {
+    width: 100%;
+    margin: 50px 20px;
+  }
+  
+  .Card-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 20px;
+  }
+  
+  .Bubble-list {
+    margin: 0px 20px;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
