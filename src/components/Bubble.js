@@ -1,14 +1,15 @@
 import '../App.css';
 
-function Bubble () {
-  return(
-    <div class="Bubble">
-    <img src="github.png" alt="GitHub" class="Bubble-img" />
-    <div class="Bubble-content">
-      <h3 class="Bubble-title">GitHub</h3>
-    </div>
-  </div>
-  )
+function Bubble({ img, title, link }) {
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer" className="Bubble-link">
+      <div className="Bubble">
+        <img src={img} alt={title} className="Bubble-img" />
+        <div className="Bubble-content">
+        </div>
+      </div>
+    </a>
+  );
 }
 
-export default Bubble; 
+export default Bubble;

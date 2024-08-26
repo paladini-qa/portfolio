@@ -1,15 +1,94 @@
-.App-header {
+@font-face {
+  font-family: 'Futura';
+  src: url('/public/fonts/futura-pt-bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 
+:root {
+  --neon-color: #9D00FF;
+  --neon-shadow: 0 0 2px #9D00FF, 0 0 5px #9D00FF, 0 0 5px #9D00FF, 0 0 5px #9D00FF;
+  --neon-hover: 0 0 5px #7A00CC, 0 0 20px #7A00CC, 0 0 40px #7A00CC, 0 0 80px #7A00CC;
+}
+
+body {
+  margin: 0;
+  font-family: 'Futura', sans-serif;
+  background-color: #0b1825;
+}
+
+.App {
+  text-align: left;
+  height: calc(100vh - 350px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Highlight {
+  color: var(--neon-color);
+  text-shadow: var(--neon-shadow);
+}
+
+.Portfolio-item {
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  padding: 0;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+h3 {
+  margin: 0;
+}
+
+.Button {
+  background-color: #9D00FF;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  justify-content: center;
+  font-size: 1em;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: var(--neon-shadow);
+}
+
+.Button:hover {
+  background-color: var(--neon-color);
+  box-shadow: var(--neon-hover);
 }
 
 .Nav-list {
   list-style-type: none;
   margin: 0;
-  padding: 25px;
+  padding: 50px 100px;
   display: flex;
   overflow: hidden;
-  background-color: #333;
-  gap: 25px;
+  justify-content: space-between;
+}
+
+.Nav {
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-items {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  gap: 50px;
+  align-items: center;
+  font-family: 'Futura', sans-serif;
 }
 
 .Nav-item {
@@ -21,29 +100,39 @@
 #About {
   margin: 0;
   display: flex;
+  align-items: center;
 }
 
 .Title-item {
   font-size: 2em;
-  margin: 25px;
+  margin: 0 100px;
   text-decoration: none;
+  color: white;
 }
 
 .Text-item {
   font-size: 1em;
-  margin: 25px;
+  margin: 50px 100px;
   text-decoration: none;
-  width: 50%;
+  width: 35%;
   height: 50%;
+  color: white;
+}
+
+.Title-name {
+  font-size: 4em;
+  margin: 0 100px;
+  text-decoration: none;
+  color: white;
 }
 
 .card {
   width: 300px;
   height: 200px;
-  border-radius: 25px;
+  border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin-left: 25px;
+  margin-left: 50px;
   background-color: #fff;
   text-align: center;
   align-content: end;
@@ -57,7 +146,7 @@
 }
 
 .card-content {
-  padding: 25px;
+  padding: 50px;
   position: relative;
   z-index: 1;
 }
@@ -74,20 +163,24 @@
 }
 
 .Footer {
-  background-color: #f1f1f1;
   text-align: center;
-  padding: 10px;
+  padding: 50px 0px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  font-size: 1em;
+}
+
+.Footer-text {
+  color: white;
 }
 
 .Profile-pic {
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  margin-top: 25px;
-  margin-left: 25px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .Card-list {
@@ -96,28 +189,56 @@
 
 .Bubble-img {
   border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 2px #9D00FF, 0 0 10px #9D00FF, 0 0 10px #9D00FF, 0 0 10px #9D00FF;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
 }
 
 .Bubble-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px #7A00CC, 0 0 20px #7A00CC, 0 0 40px #7A00CC, 0 0 80px #7A00CC;
 }
 
 .Bubble {
-  width: 150px;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  margin-left: 25px;
   overflow: hidden;
-  margin-left: 25px;
-  background-color: #fff;
   text-align: center;
   align-content: end;
 }
 
 .Bubble-list {
   display: flex;
+  margin: 0px 100px;
+  gap: 25px
+}
+
+.Bubble-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+
+  height: calc(100vh - 350px);
+  justify-content: center;
+}
+
+.profile-image {
+  width: 331.09px; /* Define a largura da imagem */
+  height: 446px; /* Define a altura da imagem */
+  border-radius: 0; /* Arredonda as bordas para criar um círculo */
+  box-shadow: 0 0 5px #9D00FF, 0 0 15px #9D00FF; /* Define a sombra inicial */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05); /* Aumenta o tamanho da imagem ao passar o mouse */
+  box-shadow: 0 0 10px #7A00CC, 0 0 25px #7A00CC, 0 0 40px #7A00CC; /* Define a sombra ao passar o mouse */
 }
