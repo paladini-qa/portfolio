@@ -1,7 +1,7 @@
-import '../App.css';
-import Bubble from '../components/Bubble'
-import Button from '../components/Button'
-import ProfileImage from '../components/ProfileImage';
+import '../../App.css';
+import Bubble from '../../components/Bubble'
+import Button from '../../components/Button'
+import ProfileImage from '../../components/ProfileImage';
 
 function Contact() {
     return(

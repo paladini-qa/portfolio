@@ -1,5 +1,5 @@
-import '../App.css';
-import ProfileImage from '../components/ProfileImage';
+import '../../App.css';
+import ProfileImage from '../../components/ProfileImage';
 
 function About() {
     return (
