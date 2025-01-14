@@ -1,4 +1,4 @@
-import '../App.css';
+import './Bubble.css';
 
 function Bubble({ img, title, link }) {
   return (

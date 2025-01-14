@@ -1,0 +1,23 @@
+#About {
+  display: flex;
+  align-items: center;
+}
+
+.Callout {
+  text-decoration: none;
+  color: white;
+}
+
+.Text {
+  font-size: 1em;
+  text-decoration: none;
+  width: 35%;
+  height: 50%;
+  color: white;
+}
+
+.Name {
+  font-size: 4em;
+  text-decoration: none;
+  color: white;
+}

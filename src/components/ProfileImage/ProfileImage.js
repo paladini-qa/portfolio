@@ -1,4 +1,4 @@
-import '../App.css';
+import './ProfileImage.css';
 
 function ProfileImage({ img }) {
     return (

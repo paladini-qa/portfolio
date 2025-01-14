@@ -1,13 +1,18 @@
 import './App.css';
-import { Router, Route, Switch } from "react-router-dom";
-import Experience from './pages/Experience';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './pages/Home';
+import Experiences from "./pages/Experiences";
+import Projects from "./pages/Projects";
 
 function Main() {
     return (
         <Router>
-            <Switch>
-                <Route path="/Experience" component={Experience}/>
-            </Switch>
+            <Routes>
+                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/experience" element={<Experiences />} />
+                <Route path="/projects" element={<Projects />} />
+            </Routes>
         </Router>
     );
 }

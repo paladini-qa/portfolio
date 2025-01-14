@@ -1,0 +1,6 @@
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

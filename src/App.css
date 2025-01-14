@@ -1,28 +1,21 @@
 @font-face {
-  font-family: 'Futura';
-  src: url('/public/fonts/futura-pt-bold.otf') format('otf');
+  font-family: 'PT';
+  src: url('/public/fonts/PTSerif-Bold.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   --neon-color: #9D00FF;
-  --neon-shadow: 0 0 2px #9D00FF, 0 0 5px #9D00FF, 0 0 5px #9D00FF, 0 0 5px #9D00FF;
+  --neon-color-hover: #7A00CC;
+  --neon-shadow: 0 0 5px #9D00FF, 0 0 20px #9D00FF, 0 0 40px #9D00FF, 0 0 80px #9D00FF;
   --neon-hover: 0 0 5px #7A00CC, 0 0 20px #7A00CC, 0 0 40px #7A00CC, 0 0 80px #7A00CC;
 }
 
 body {
-  margin: 0;
-  font-family: 'Futura', sans-serif;
+  margin: 25px;
+  font-family: 'PT', sans-serif;
   background-color: #0b1825;
-}
-
-.App {
-  text-align: left;
-  height: calc(100vh - 350px);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .Highlight {
@@ -30,104 +23,13 @@ body {
   text-shadow: var(--neon-shadow);
 }
 
+.Highlight:hover {
+  color: var(--neon-color-hover);
+  text-shadow: var(--neon-hover);
+}
+
 .Portfolio-item {
   font-size: 2em;
-  text-decoration: none;
-  color: white;
-}
-
-header, nav {
-  position: relative;
-  z-index: 1000;
-  width: 100%;
-}
-
-ul {
-  padding: 0;
-}
-
-nav {
-  justify-content: space-between;
-}
-
-h3 {
-  margin: 0;
-}
-
-.Button {
-  background-color: #9D00FF;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 10px 20px;
-  justify-content: center;
-  font-size: 1em;
-  height: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: var(--neon-shadow);
-}
-
-.Button:hover {
-  background-color: var(--neon-color);
-  box-shadow: var(--neon-hover);
-}
-
-.Nav-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 50px 100px;
-  display: flex;
-  overflow: hidden;
-  justify-content: space-between;
-}
-
-.Nav {
-  margin: 0;
-  padding: 0;
-}
-
-.Nav-items {
-  list-style-type: none;
-  margin: 0;
-  display: flex;
-  overflow: hidden;
-  gap: 50px;
-  align-items: center;
-  font-family: 'Futura', sans-serif;
-}
-
-.Nav-item {
-  font-size: 1em;
-  color: white;
-  text-decoration: none;
-}
-
-#About {
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-.Title-item {
-  font-size: 2em;
-  margin: 0 100px;
-  text-decoration: none;
-  color: white;
-}
-
-.Text-item {
-  font-size: 1em;
-  margin: 50px 100px;
-  text-decoration: none;
-  width: 35%;
-  height: 50%;
-  color: white;
-}
-
-.Title-name {
-  font-size: 4em;
-  margin: 0 100px;
   text-decoration: none;
   color: white;
 }
@@ -168,19 +70,6 @@ h3 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.Footer {
-  text-align: center;
-  padding: 50px 0px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  font-size: 1em;
-}
-
-.Footer-text {
-  color: white;
-}
-
 .Profile-pic {
   height: 150px;
   width: 150px;
@@ -193,40 +82,6 @@ h3 {
   display: flex;
 }
 
-.Bubble-img {
-  border-radius: 100%;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 2px #9D00FF, 0 0 10px #9D00FF, 0 0 10px #9D00FF, 0 0 10px #9D00FF;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: white;
-}
-
-.Bubble-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 5px #7A00CC, 0 0 20px #7A00CC, 0 0 40px #7A00CC, 0 0 80px #7A00CC;
-}
-
-.Bubble {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  overflow: hidden;
-  text-align: center;
-  align-content: end;
-}
-
-.Bubble-list {
-  display: flex;
-  margin: 0px 100px;
-  gap: 25px
-}
-
-.Bubble-link {
-  text-decoration: none;
-  color: #333;
-}
-
 .line {
   display: flex;
   align-items: center;
@@ -235,20 +90,11 @@ h3 {
   justify-content: center;
 }
 
-.profile-image {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Make the image responsive */
-  border-radius: 0;
-  box-shadow: 0 0 5px #9D00FF, 0 0 15px #9D00FF;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .profile-image:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px #7A00CC, 0 0 25px #7A00CC, 0 0 40px #7A00CC;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .Nav-list {
     padding: 50px 20px;

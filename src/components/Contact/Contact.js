@@ -1,7 +1,6 @@
-import '../../App.css';
-import Bubble from '../../components/Bubble'
-import Button from '../../components/Button'
-import ProfileImage from '../../components/ProfileImage';
+import './Contact.css';
+import Bubble from '../Bubble/Bubble';
+import Button from '../Button/Button';
 
 function Contact() {
     return(
