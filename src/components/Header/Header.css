@@ -1,7 +1,35 @@
-button {
-  font-size: 1em;
+h1{
   color: white;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+.Portfolio-item {
+  text-decoration: none;
+  font-size: 3em;
+} 
+
+.Nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-item {
+  text-decoration: none;
+}
+
+.End-list {
+  display: flex;
+  gap: 3em;
+}
+
+.Header {
+  padding: 0 0 0px 0;
 }

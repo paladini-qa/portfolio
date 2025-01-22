@@ -1,21 +1,15 @@
-import { useNavigate } from 'react-router-dom';
 import './Header.css';
+import '../../App.css';
 
 function Header() {
-  const navigate = useNavigate();
-
-  const handleClick = (page) => {
-    navigate(page);
-  };
-
   return (
-      <header className='App-header'>
+      <header className='Header'>
         <nav>
           <ul className='Nav-list'>
-            <h1><button onClick={() => handleClick('/home')} className="Portfolio-item">Portfolio.</button></h1>
-            <ul className="Nav-items">
-              <li><button onClick={() => handleClick('/experience')} className="Nav-item"><h3>Experiences</h3></button></li>
-              <li><button onClick={() => handleClick('/projects')} className="Nav-item"><h3>Projects</h3></button></li>
+            <li><a href="/home" className="Nav-item"><h1 className='Portfolio-item'>Portfolio.</h1></a></li>
+            <ul className="End-list">
+              <li><a className="Nav-item" href="/experience"><h1>Experiences</h1></a></li>
+              <li><a className="Nav-item" href="/projects"><h1 className='End-item'>Projects</h1></a></li>
             </ul>
           </ul>
         </nav>

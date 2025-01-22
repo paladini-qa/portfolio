@@ -4,3 +4,8 @@
   border-radius: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #7A00CC, 0 0 25px #7A00CC, 0 0 40px #7A00CC;
+}

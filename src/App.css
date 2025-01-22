@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'PT';
-  src: url('/public/fonts/PTSerif-Bold.ttf') format('ttf');
+  src: url('/public/fonts/PTSerif-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,8 +13,7 @@
 }
 
 body {
-  margin: 25px;
-  font-family: 'PT', sans-serif;
+  margin: 100px;
   background-color: #0b1825;
 }
 
@@ -26,99 +25,4 @@ body {
 .Highlight:hover {
   color: var(--neon-color-hover);
   text-shadow: var(--neon-hover);
-}
-
-.Portfolio-item {
-  font-size: 2em;
-  text-decoration: none;
-  color: white;
-}
-
-.card {
-  width: 300px;
-  height: 200px;
-  border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  margin-left: 50px;
-  background-color: #fff;
-  text-align: center;
-  align-content: end;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 50px;
-  position: relative;
-  z-index: 1;
-}
-
-.card-title {
-  margin: 0;
-  font-size: 20px;
-  color: #333;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.Profile-pic {
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-.Card-list {
-  display: flex;
-}
-
-.line {
-  display: flex;
-  align-items: center;
-  margin-right: 100px;
-  height: calc(100vh - 350px);
-  justify-content: center;
-}
-
-.profile-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #7A00CC, 0 0 25px #7A00CC, 0 0 40px #7A00CC;
-}
-
-@media (max-width: 768px) {
-  .Nav-list {
-    padding: 50px 20px;
-  }
-  
-  .Text-item {
-    width: 100%;
-    margin: 50px 20px;
-  }
-  
-  .Card-list {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    margin: 20px;
-  }
-  
-  .Bubble-list {
-    margin: 0px 20px;
-  }
-}
-
-* {
-  box-sizing: border-box;
 }
