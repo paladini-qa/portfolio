@@ -6,21 +6,21 @@
 .timeline::before {
   content: '';
   position: absolute;
-  left: 50px;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 5px;
   background: var(--neon-color);
 }
 
 .timeline-event {
   position: relative;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-bottom: 20px;
   padding: 20px;
-  background: #1a2b3c;
+  background: #372773;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
 }
 
 h2 {
@@ -67,5 +67,5 @@ h4 {
   font-size: 1.2em;
   margin-bottom: 5px;
   margin-top: 5px;
-  color: var(--neon-color);
+  color: #7155d9;
 }

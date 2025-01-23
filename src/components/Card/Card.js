@@ -1,14 +1,14 @@
 import './Card.css';
 
-function Card () {
-  return(
-    <div class="card">
-    <img src="calculex.jpeg" alt="Imagem do Card" class="card-img" />
-    <div class="card-content">
-      <h3 class="card-title">Título do Card</h3>
-    </div>
-  </div>
-  )
+function Card({ title, description, imageUrl, link }) {
+  return (
+    <a href={link} className="card">
+      <img src={imageUrl} alt={description} className="card-img" />
+      <div className="card-content">
+        <h3 className="card-title">{title}</h3>
+      </div>
+    </a>
+  );
 }
 
-export default Card; 
+export default Card;

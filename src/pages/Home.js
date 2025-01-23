@@ -8,17 +8,15 @@ function Home() {
     return (
         <div>
             <Header />
-            <div>
-                <div className="App">
-                    <div className='About'>
+            <div className="About">  
                         <div className='Profile'>
                             <div className='Title'>
                                 <h1 className='Callout'>Hello, World! It's Me</h1>
                                 <h1 className='Name'>Vitor Paladini</h1>
-                                <h1 className='Callout'>And I am a <span className='Highlight'>Quality Assurance Analyst</span></h1>
+                                <h1 className='Callout'>And I am a <span>Quality Assurance Analyst</span></h1>
                             </div>
                         </div>
-                        <h3 className='Text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut diam cursus, suscipit nisl et, hendrerit nisi. Suspendisse auctor eros in placerat sodales. Suspendisse ut rutrum tellus, at faucibus augue. Sed eros ligula, ultrices a porttitor ac, aliquet porttitor erat. Nulla nulla velit, aliquet non rhoncus consequat, finibus in nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed porttitor nulla sed molestie interdum. Nulla porttitor nibh leo, vitae blandit ex ullamcorper in. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <h3 className='Text'>Professional with experience in Software Quality Assurance, working for over a year in integration, system, and acceptance testing. I am proficient in using Cypress and Appium for web and mobile automation, as well as Postman and JMeter for API and performance testing. I also apply QA methodologies such as BDD and shift-left testing and have expertise in JavaScript, TypeScript, Python, HTML/CSS, among other web development technologies and frameworks. Skilled with SQL, DynamoDB, and PostgreSQL databases, I excel at identifying inconsistencies and producing accurate reports. I work in an interdisciplinary manner to deliver products aligned with industry best practices. Focused on continuous improvement, I offer solutions to optimize the end-user experience by integrating GitHub Actions into CI/CD pipelines for greater agility and reliability in deliveries.</h3>
                         <div className='Bubble-list'>
                             <Bubble
                                 img='/images/linkedin.png'
@@ -30,8 +28,6 @@ function Home() {
                                 link='https://github.com/paladini-qa' />
                             <Button text='Download CV' />
                         </div>
-                    </div>
-                </div>
             </div>
             <Footer />
         </div>

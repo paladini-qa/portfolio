@@ -6,21 +6,16 @@
 }
 
 :root {
-  --neon-color: #9D00FF;
-  --neon-color-hover: #7A00CC;
-  --neon-shadow: 0 0 5px #9D00FF, 0 0 20px #9D00FF, 0 0 40px #9D00FF, 0 0 80px #9D00FF;
-  --neon-hover: 0 0 5px #7A00CC, 0 0 20px #7A00CC, 0 0 40px #7A00CC, 0 0 80px #7A00CC;
+  --neon-color: #372773;
+  --neon-color-hover: #4c3a8b;
+  --neon-shadow: 0 0 5px #372773;
+  --neon-hover: 0 0 5px #7A00CC, 0 0 10px #7A00CC, 0 0 20px #7A00CC, 0 0 20px #7A00CC;
 }
 
 body {
   margin: 100px;
-  background-color: #0b1825;
-  font-family: 'PT'; 
-}
-
-.Highlight {
-  color: var(--neon-color);
-  text-shadow: var(--neon-shadow);
+  background-color: #7155d9;
+  font-family: 'PT';
 }
 
 .Highlight:hover {
@@ -32,11 +27,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: left;
+  width: 100%;
+  text-align: left;
 }
 
 .Callout {
   text-decoration: none;
-  color: white;
+  color: #372773;
 }
 
 .Text {
@@ -60,4 +57,10 @@ body {
 .Text {
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

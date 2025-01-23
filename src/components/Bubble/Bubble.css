@@ -8,6 +8,7 @@
 
 .Bubble-img:hover {
   transform: scale(1.05);
+  box-shadow: var(--neon-hover);
 }
 
 .Bubble {

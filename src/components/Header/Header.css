@@ -4,6 +4,10 @@ h1{
   padding: 0;
 }
 
+.Header-item:hover {
+  text-shadow: var(--neon-hover);
+}
+
 
 li {
   list-style-type: none;
