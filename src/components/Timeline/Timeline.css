@@ -1,3 +1,8 @@
+.timeline {
+  position: relative;
+  color: white;
+}
+
 .timeline::before {
   content: '';
   position: absolute;
@@ -11,8 +16,11 @@
 .timeline-event {
   position: relative;
   margin-left: 100px;
-  padding-left: 20px;
-  border-left: 4px solid var(--neon-color);
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #1a2b3c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -24,18 +32,13 @@ h2 {
 .timeline-event::before {
   content: '';
   position: absolute;
-  left: -14px;
-  top: 0;
+  left: -34px;
+  top: 20px;
   width: 20px;
   height: 20px;
   background: var(--neon-color);
   border-radius: 50%;
   box-shadow: var(--neon-shadow);
-}
-
-.timeline-date {
-  font-size: 1.2em;
-  margin-bottom: 5px;
 }
 
 .timeline-title {
@@ -48,6 +51,21 @@ h2 {
   margin: 5px 0 0 0;
 }
 
-.timeline {
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.5em;
   color: white;
+}
+
+.timeline-content p {
+  margin: 10px 0 0;
+  font-size: 1em;
+  color: #ccc;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: var(--neon-color);
 }

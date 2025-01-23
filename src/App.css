@@ -52,3 +52,12 @@ body {
   font-size: 3.2em;
   color: white;
 }
+
+.Title {
+  margin-bottom: 50px;
+}
+
+.Text {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
