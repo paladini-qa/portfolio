@@ -1,9 +1,13 @@
-import './Button.css'
+import './Button.css';
 
-function Button({ text }) {
+function Button({ text, link, download }) {
     return (
-        <a href='/Curriculo.pdf' download='VitorPaladiniCV.pdf'><button className='HighlightedButton'><h3>{text}</h3></button></a>
-    )
+        <a href={link} download='{download}'>
+            <button className='HighlightedButton'>
+                <h3 className='ButtonText'>{text}</h3>
+            </button>
+        </a>
+    );
 }
 
 export default Button;
